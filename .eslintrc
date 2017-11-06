@@ -1,0 +1,173 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jasmine": true,
+    "jest": true,
+    "mocha": true,
+    "node": true
+  },
+  "rules": {
+    "arrow-body-style": [
+      0
+    ],
+    "camelcase": [
+      2,
+      {
+        "properties": "always"
+      }
+    ],
+    "comma-dangle": [
+      2,
+      "never"
+    ],
+    "consistent-return": [
+      0
+    ],
+    "curly": [
+      2,
+      "all"
+    ],
+    "function-paren-newline": [
+      0
+    ],
+    "generator-star-spacing": [
+      0
+    ],
+    "global-require": [
+      2
+    ],
+    "import/extensions": [
+      0
+    ],
+    "import/no-extraneous-dependencies": [
+      0
+    ],
+    "import/no-unresolved": [
+      0
+    ],
+    "import/prefer-default-export": [
+      0
+    ],
+    "jsx-a11y/anchor-is-valid": [
+      0
+    ],
+    "jsx-a11y/click-events-have-key-events": [
+      0
+    ],
+    "jsx-a11y/no-noninteractive-element-interactions": [
+      0
+    ],
+    "jsx-a11y/no-static-element-interactions": [
+      0
+    ],
+    "no-bitwise": [
+      0
+    ],
+    "no-cond-assign": [
+      0
+    ],
+    "no-else-return": [
+      0
+    ],
+    "no-nested-ternary": [
+      0
+    ],
+    "no-param-reassign": [
+      2,
+      {
+        "ignorePropertyModificationsFor": [
+          "req",
+          "object"
+        ],
+        "props": true
+      }
+    ],
+    "no-restricted-globals": [
+      0
+    ],
+    "no-restricted-syntax": [
+      0
+    ],
+    "no-use-before-define": [
+      0
+    ],
+    "object-curly-newline": [
+      0
+    ],
+    "object-shorthand": [
+      2,
+      "always",
+      {
+        "avoidQuotes": true
+      }
+    ],
+    "padded-blocks": [
+      2,
+      "never"
+    ],
+    "prefer-template": 2,
+    "quote-props": [
+      2,
+      "consistent-as-needed"
+    ],
+    "quotes": [
+      2,
+      "double",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
+    ],
+    "react/forbid-prop-types": [
+      0
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js"
+        ]
+      }
+    ],
+    "react/jsx-no-bind": [
+      0
+    ],
+    "react/prefer-stateless-function": [
+      0
+    ],
+    "react/prop-types": [
+      0
+    ],
+    "require-yield": [
+      1
+    ],
+    "semi": [
+      2,
+      "always"
+    ],
+    "sort-keys": [
+      2,
+      "asc",
+      {
+        "caseSensitive": true,
+        "natural": false
+      }
+    ],
+    "space-before-function-paren": [
+      2,
+      {
+        "anonymous": "always",
+        "named": "always",
+        "asyncArrow": "ignore"
+      }
+    ]
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  }
+}
