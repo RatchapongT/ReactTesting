@@ -92,19 +92,17 @@ class BasicLayout extends React.PureComponent {
     if (currentMenuSelectedKeys.length === 0) {
       return ["home"];
     }
-    console.log("DEFUALT" + currentMenuSelectedKeys);
     return currentMenuSelectedKeys;
   }
 
   getCurrentMenuSelectedKeys (props) {
-    console.log(this.props);
     const { location } = props || this.props;
     const { pathname } = location;
     const keys = pathname.split("/").slice(1);
     if (keys.length === 1 && keys[0] === "") {
       return ["home"];
     }
-    return keys;
+    return [pathname];
   }
 
   getNavMenuItems (menusData, parentPath = "") {
@@ -140,7 +138,7 @@ class BasicLayout extends React.PureComponent {
       }
       const icon = item.icon ? <Icon type={item.icon} /> : null;
       return (
-        <Menu.Item key={item.key || item.path}>
+        <Menu.Item key={[parentPath, item.path].join("/")}>
           {
             /^https?:\/\//.test(itemPath) ? (
               <a href={itemPath} target={item.target}>
